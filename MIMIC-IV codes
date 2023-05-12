@@ -195,10 +195,7 @@ from "public".suspicion_of_infection
 where suspected_infection=1 
 AND specimen ILIKE '%SWAB%'
 
-------------------------------------------------(导出为CSV，分别将列名positive——culture更改为对应的blood/TISSUE/MRSA SCREEN/stool/urine/sputum_culture,然后再导入navicat)
 
-
------从STATA导出的CSV中，变量格式为character,sepski11导出再导入，subject_id等也变成character，然后再合并；
  
 create table sepaki12 as 	
  select * from  "public".sepsis_11
